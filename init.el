@@ -78,7 +78,11 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    setup-cygwin
+    cygwin-mount
+    company-quickhelp))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
