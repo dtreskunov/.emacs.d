@@ -173,5 +173,3 @@
 (require 'server)
 (or (server-running-p)
      (server-start))
-
-;; --server-file c:/users/denis/.emacs.d/server --alternate-editor c:/users/denis/emacs/25.1-2/bin/runemacs.exe
