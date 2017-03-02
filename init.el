@@ -1,3 +1,5 @@
+(prefer-coding-system 'utf-8)
+
 ;;;;
 ;; Packages
 ;;;;
@@ -82,6 +84,7 @@
 
     setup-cygwin
     cygwin-mount
+    clj-refactor
     company-quickhelp))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -161,7 +164,9 @@
  '(company-quickhelp-use-propertized-text t)
  '(package-selected-packages
    (quote
-    (clj-refactor company-quickhelp markdown-mode cider ## tagedit smex rainbow-delimiters queue projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking)))
+    (restclient highlight-thing cygwin-mount setup-cygwin p4 clj-refactor company-quickhelp markdown-mode cider ## tagedit smex rainbow-delimiters queue projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking)))
+ '(projectile-indexing-method (quote alien))
+ '(scroll-conservatively 10000)
  '(window-divider-default-places t)
  '(window-divider-mode t))
 
@@ -177,3 +182,5 @@
 (require 'server)
 (or (server-running-p)
      (server-start))
+
+(delete-selection-mode 1)
