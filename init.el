@@ -164,7 +164,8 @@
  '(company-quickhelp-use-propertized-text t)
  '(package-selected-packages
    (quote
-    (restclient highlight-thing cygwin-mount setup-cygwin p4 clj-refactor company-quickhelp markdown-mode cider ## tagedit smex rainbow-delimiters queue projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking)))
+    (persistent-scratch yaml-mode sort-words markdown-preview-mode restclient highlight-thing cygwin-mount setup-cygwin p4 clj-refactor company-quickhelp markdown-mode cider ## tagedit smex rainbow-delimiters queue projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking)))
+ '(persistent-scratch-autosave-mode t)
  '(projectile-indexing-method (quote alien))
  '(scroll-conservatively 10000)
  '(window-divider-default-places t)
@@ -178,6 +179,8 @@
  )
 
 (global-set-key [f1] 'shell)
+(global-set-key [C-tab] 'next-multiframe-window)
+(global-set-key [C-S-tab] 'previous-multiframe-window)
 
 (require 'server)
 (or (server-running-p)

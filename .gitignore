@@ -12,3 +12,5 @@ eshell/
 backups/
 elpa/
 server/
+url/
+.persistent-scratch
